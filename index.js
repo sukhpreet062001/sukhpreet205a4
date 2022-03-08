@@ -8,7 +8,8 @@ const client = new Client({
   host: 'ec2-44-192-245-97.compute-1.amazonaws.com',
   database: 'db67bifof96j3a',
   password: '1a11d0881ab389350a58babd9b18445cba204c639732448a5a17dc3a6c0a051e',
-  port: 5432
+  port: 5432,
+  sslmode: 'require'
 })
 
 client.connect()
