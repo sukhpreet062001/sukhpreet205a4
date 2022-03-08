@@ -4,12 +4,19 @@ let exphbs  = require('express-handlebars')
 const { Client } = require('pg')
 
 const client = new Client({
+  /*
   user: 'oooufoclfzfilm',
   host: 'ec2-44-192-245-97.compute-1.amazonaws.com',
   database: 'db67bifof96j3a',
   password: '1a11d0881ab389350a58babd9b18445cba204c639732448a5a17dc3a6c0a051e',
   port: 5432,
   sslmode: 'require'
+  */
+
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false
+  }
 })
 
 client.connect()
