@@ -1,14 +1,13 @@
 let express = require('express')
 let exphbs  = require('express-handlebars')
-const crypt = require('crypt')
 
 const { Client } = require('pg')
 
 const client = new Client({
-  user: 'postgres',
-  host: 'localhost',
-  database: 'hosting',
-  password: 'password',
+  user: 'oooufoclfzfilm',
+  host: 'ec2-44-192-245-97.compute-1.amazonaws.com',
+  database: 'db67bifof96j3a',
+  password: '1a11d0881ab389350a58babd9b18445cba204c639732448a5a17dc3a6c0a051e',
   port: 5432
 })
 
